@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.js --out-dir lib/"
+    "build": "rm -rf lib/* && microbundle build src/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "lib"
   ],
   "devDependencies": {
-    "parcel-bundler": "^1.11.0"
-  }
+    "microbundle": "^0.9.0"
+  },
+  "dependencies": {}
 }
