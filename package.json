@@ -1,0 +1,31 @@
+{
+  "name": "all-keyboardevent-keys",
+  "version": "0.0.0--prerelease.0",
+  "description": "All KeyboardEvent Keys",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.js --out-dir lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanmcp/all-keyboardevent-keys.git"
+  },
+  "keywords": [
+    "keyboard",
+    "keyboardevent",
+    "keys"
+  ],
+  "author": "Sean McPherson <seanmcp25@gmail.com> (https://github.com/seanmcp)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanmcp/all-keyboardevent-keys/issues"
+  },
+  "homepage": "https://github.com/seanmcp/all-keyboardevent-keys#readme",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
