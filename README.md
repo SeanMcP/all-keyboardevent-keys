@@ -1,6 +1,10 @@
 # All KeyboardEvent Keys
 [![npm](https://img.shields.io/npm/v/all-keyboardevent-keys.svg)](https://npmjs.com/package/all-keyboardevent-keys) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/all-keyboardevent-keys.svg)](https://npmjs.com/package/all-keyboardevent-keys) [![npm](https://img.shields.io/npm/dt/all-keyboardevent-keys.svg)](https://npmjs.com/package/all-keyboardevent-keys)
 
+All* KeyboardEvent Keys (\* not all yet)
+
+> Note: This library is a work in progress. Checkout [the contribution guidelines](/CONTRIBUTING.md) to see how you can help.
+
 ## Install
 
 Add with your favorite package manager:
