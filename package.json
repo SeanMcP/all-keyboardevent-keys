@@ -1,11 +1,13 @@
 {
   "name": "all-keyboardevent-keys",
-  "version": "0.0.0--prerelease.1",
+  "version": "0.0.1",
   "description": "All KeyboardEvent Keys",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf lib/* && parcel build src/index.js --out-dir lib/"
+    "build": "rm -rf lib/* && parcel build src/index.js --out-dir lib/",
+    "prepublish": "npm run format",
+    "format": "prettier --write 'src/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,7 @@
     "lib"
   ],
   "devDependencies": {
-    "parcel-bundler": "^1.11.0"
-  },
-  "dependencies": {}
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.15.3"
+  }
 }
