@@ -10,6 +10,11 @@
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint --fix 'src/**/*.js'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seanmcp/all-keyboardevent-keys.git"
@@ -31,6 +36,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",
+    "husky": "^1.3.1",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.15.3"
   }
