@@ -1,11 +1,11 @@
 {
   "name": "all-keyboardevent-keys",
-  "version": "0.0.0--prerelease.0",
+  "version": "0.0.0--prerelease.1",
   "description": "All KeyboardEvent Keys",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf lib/* && microbundle build src/index.js"
+    "build": "rm -rf lib/* && parcel build src/index.js --out-dir lib/"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "lib"
   ],
   "devDependencies": {
-    "microbundle": "^0.9.0"
+    "parcel-bundler": "^1.11.0"
   },
   "dependencies": {}
 }
