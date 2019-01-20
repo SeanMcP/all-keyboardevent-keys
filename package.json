@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf lib/* && parcel build src/index.js --out-dir lib/",
-    "prepublish": "npm run format",
-    "format": "prettier --write 'src/**/*.js'"
+    "precommit": "npm run format && npm run lint",
+    "format": "prettier --write 'src/**/*.js'",
+    "lint": "eslint --fix 'src/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
     "lib"
   ],
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.15.3"
   }
