@@ -1,7 +1,6 @@
-# All KeyboardEvent Keys
+# All* KeyboardEvent Keys
 [![npm](https://img.shields.io/npm/v/all-keyboardevent-keys.svg)](https://npmjs.com/package/all-keyboardevent-keys) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/all-keyboardevent-keys.svg)](https://npmjs.com/package/all-keyboardevent-keys) [![npm](https://img.shields.io/npm/dt/all-keyboardevent-keys.svg)](https://npmjs.com/package/all-keyboardevent-keys)
-
-All* KeyboardEvent Keys (\* not all yet)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 > Note: This library is a work in progress. Checkout [the contribution guidelines](/CONTRIBUTING.md) to see how you can help.
 
@@ -23,7 +22,7 @@ Import the default `KEY` object, then use:
 import KEY from 'all-keyboardevent-keys'
 ```
 
-`KEY` is an object with nearly\* all available KeyboardEvent keys. You can view the [full list available here](src/index.js).
+`KEY` is an object with nearly all available KeyboardEvent keys. You can view the [full list available here](src/index.js).
 
 You can access word keys using dot notation:
 
@@ -41,7 +40,30 @@ KEY[9]    // '9'
 KEY['\\'] // '\'
 ```
 
-> \*Currently a U.S. English keyboard
+## Keyboards
+
+Each keyboard has its own set of Keyboardevent keys. It is the goal of this project to gather all keys into a single library.
+
+### Current
+
+- en_US 🇺🇸
+
+To add a keyboardevent keys for your keyboard language, please read the [contributing guide](/CONTRIBUTING.md) and make a pull request.
+
+### Languages to add
+
+- [ ] zh-Hans 🇨🇳
+- [ ] hi 🇮🇳
+- [ ] fr_FR 🇫🇷
+- [ ] es_ES 🇪🇸
+- [ ] en_GB 🇬🇧
+- [ ] de_DE 🇩🇪
+
+Don't see your keyboard language? [File an issue requesting it](https://github.com/SeanMcP/all-keyboardevent-keys/issues/new).
+
+## Collaborators
+
+- [Sean McPherson](https://github.com/seanmcp) - **author**, en_US 🇺🇸
 
 ## License
 

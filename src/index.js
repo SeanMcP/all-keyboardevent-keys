@@ -1,5 +1,5 @@
 import SCRAPED from './scraped'
-import en_US from './en_US'
+import en_US from './languages/en_US'
 
 const special_char = '`~!@#$%^&*()-_+=[{]}\\|:;\'",<.>/?'
 

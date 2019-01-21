@@ -1,6 +1,6 @@
 {
   "name": "all-keyboardevent-keys",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "All KeyboardEvent Keys",
   "main": "lib/index.js",
   "scripts": {
