@@ -1,16 +1,20 @@
-import SCRAPED from './scraped'
-import en_US from './languages/en_US'
+const SCRAPED = require('./scraped')
+const en_US = require('./languages/en_US')
 
-const special_char = '`~!@#$%^&*()-_+=[{]}\\|:;\'",<.>/?'
+const special_char = '`~!@#$%^&*()-_+=[{]}\\|:;\'",<.>/?'.split('')
 
-const numbers = '0123456789'
+const numbers = '0123456789'.split('')
 
-const key_array = [...en_US, ...special_char, ...SCRAPED, ...numbers]
+const key_array = [].concat(numbers, special_char, SCRAPED, en_US)
 
-const KEY = {}
+function generateKEY(_array) {
+  const KEY = {}
 
-key_array.forEach(key => {
-  if (!KEY[key]) KEY[key] = key
-})
+  _array.forEach(key => {
+    if (!KEY[key]) KEY[key] = key
+  })
 
-export default KEY
+  return KEY
+}
+
+export default generateKEY(key_array)

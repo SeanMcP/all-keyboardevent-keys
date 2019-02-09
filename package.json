@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf lib/* && parcel build src/index.js --out-dir lib/",
     "precommit": "npm run format && npm run lint",
+    "fix:dependencies": "rm -rf node_modules/ package-lock.json && npm install",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint --fix 'src/**/*.js'"
   },
