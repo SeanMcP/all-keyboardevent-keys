@@ -1,11 +1,12 @@
 {
   "name": "all-keyboardevent-keys",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "All KeyboardEvent Keys",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf lib/* && parcel build src/index.js --out-dir lib/",
+    "build": "npm run precommit && rm -rf lib/* && parcel build src/index.js --out-dir lib/",
+    "dev": "parcel watch src/index.js",
     "precommit": "npm run format && npm run lint",
     "fix:dependencies": "rm -rf node_modules/ package-lock.json && npm install",
     "format": "prettier --write 'src/**/*.js'",

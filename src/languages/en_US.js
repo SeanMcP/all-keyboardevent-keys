@@ -1,4 +1,6 @@
-const en_US_letters_cap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
-const en_US_letters_low = 'abcdefghijklmnopqrstuvwxyz'.split('')
+const en_US_letters_cap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-export default [].concat(en_US_letters_cap, en_US_letters_low)
+const en_US_letters_cap_array = en_US_letters_cap.split('')
+const en_US_letters_low_array = en_US_letters_cap.toLowerCase().split('')
+
+export default [...en_US_letters_cap_array, ...en_US_letters_low_array]
