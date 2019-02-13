@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "build": "npm run precommit && rm -rf lib/* && babel src -d lib --ignore '**/*.test.js'",
+    "build": "npm run precommit && babel src -d lib --ignore '**/*.test.js'",
     "precommit": "npm run format && npm run lint && npm run test",
     "fix:dependencies": "rm -rf node_modules/ package-lock.json && npm install",
     "format": "prettier --write 'src/**/*.js'",
